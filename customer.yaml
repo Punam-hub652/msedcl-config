@@ -1,0 +1,29 @@
+spring:
+    application:
+        name: CUSTOMER_SERVICE
+    datasource:
+        url: jdbc:mysql://localhost:3306/customer_db
+        username: root
+        password: root123
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    profiles:
+      active: UAT
+
+server:
+    port: 8181
+
+logging:
+    file:
+        name: logs/customer.log
+
+#configuration
+build:
+  version: "1.0"
+customers:
+    message: "Welcome to MyBank customer related REST APIs"
+    contactDetails:
+        name: "Vivek Gohil"
+        email: "ghl_vivek@hotmail.com"
+    onCallSupport:
+        - 9876543210
+        - 1234567890

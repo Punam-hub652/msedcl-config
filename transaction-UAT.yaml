@@ -1,0 +1,46 @@
+spring:
+    application:
+        name: TRANSACTION-SERVICE
+    datasource:
+        url: jdbc:mysql://localhost:3306/transaction_db
+        username: root
+        password: root123
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+    port: 8383
+
+logging:
+    file:
+        name: logs/transaction.log
+management:
+    endpoints:
+        web:
+            base-path: /actuator
+            exposure:
+                include: health,info,metrics,env,beans,mappings,totalsavings-metrics
+
+    endpoint:
+        health:
+            show-details: always
+            show-components: always
+
+    health:
+        defaults:
+            enabled: true
+
+    info:
+        env:
+            enabled: true
+
+#configuration
+build:
+  version: "1.0"
+transactions:
+    message: "Welcome to MyBank transactions related REST APIs - UAT"
+    contactDetails:
+        name: "Test User"
+        email: "test_user@hotmail.com"
+    onCallSupport:
+        - 4568915248
+        - 1234567890

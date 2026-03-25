@@ -20,7 +20,7 @@ logging:
 build:
   version: "1.0"
 customers:
-    message: "Welcome to MyBank customer related REST APIs"
+    message: "Welcome to MyBank customer related REST APIs- default"
     contactDetails:
         name: "Vivek Gohil"
         email: "ghl_vivek@hotmail.com"

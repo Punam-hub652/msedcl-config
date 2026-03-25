@@ -38,7 +38,7 @@ management:
 build:
   version: "1.0"
 customers:
-    message: "Welcome to MyBank customers related REST APIs - UAT"
+    message: "Welcome to MyBank customers related REST APIs - uat"
     contactDetails:
         name: "Test User"
         email: "test_user@hotmail.com"

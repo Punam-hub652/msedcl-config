@@ -40,8 +40,8 @@ build:
 customers:
     message: "Welcome to MyBank customers related REST APIs - uat"
     contactDetails:
-        name: "Test User"
-        email: "test_user@hotmail.com"
+        name: "Test User123"
+        email: "test_user123@hotmail.com"
     onCallSupport:
         - 4568915248
         - 1234567890

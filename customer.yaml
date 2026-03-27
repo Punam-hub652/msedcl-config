@@ -7,7 +7,7 @@ spring:
         password: root123
         driver-class-name: com.mysql.cj.jdbc.Driver
     profiles:
-      active: UAT
+      active: prod
 
 server:
     port: 8181
